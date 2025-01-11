@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin's Character Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Build Calvin's Character</h1>
+            <p>Customize Calvin's appearance!</p>
+        </header>
+        
+        <div class="character-builder">
+            <!-- Character image container -->
+            <div id="character" class="character-container">
+                <div id="character-background" class="background"></div>
+                <div id="character-body" class="body"></div>
+                <div id="character-eyes" class="eyes"></div>
+                <div id="character-mouth" class="mouth"></div>
+                <div id="character-hat" class="hat"></div>
+                <div id="character-clothes" class="clothes"></div>
+            </div>
+
+            <!-- Customization controls -->
+            <div class="controls">
+                <!-- Front selection -->
+                <label for="frontSelector">Front:</label>
+                <select id="frontSelector">
+                    <option value="front1">Front 1</option>
+                    <option value="front2">Front 2</option>
+                    <option value="front3">Front 3</option>
+                    <option value="front4">Front 4</option>
+                    <option value="front5">Front 5</option>
+                    <option value="front6">Front 6</option>
+                    <option value="front7">Front 7</option>
+                    <option value="front8">Front 8</option>
+                    <option value="front9">Front 9</option>
+                    <option value="front10">Front 10</option>
+                </select>
+
+                <!-- Eyes selection -->
+                <label for="eyeSelector">Eyes:</label>
+                <select id="eyeSelector">
+                    <!-- Eyes options (25 options) -->
+                    <option value="eyes1">Eyes 1</option>
+                    <option value="eyes2">Eyes 2</option>
+                    <option value="eyes3">Eyes 3</option>
+                    <option value="eyes4">Eyes 4</option>
+                    <option value="eyes5">Eyes 5</option>
+                    <option value="eyes6">Eyes 6</option>
+                    <option value="eyes7">Eyes 7</option>
+                    <option value="eyes8">Eyes 8</option>
+                    <option value="eyes9">Eyes 9</option>
+                    <option value="eyes10">Eyes 10</option>
+                    <option value="eyes11">Eyes 11</option>
+                    <option value="eyes12">Eyes 12</option>
+                    <option value="eyes13">Eyes 13</option>
+                    <option value="eyes14">Eyes 14</option>
+                    <option value="eyes15">Eyes 15</option>
+                    <option value="eyes16">Eyes 16</option>
+                    <option value="eyes17">Eyes 17</option>
+                    <option value="eyes18">Eyes 18</option>
+                    <option value="eyes19">Eyes 19</option>
+                    <option value="eyes20">Eyes 20</option>
+                    <option value="eyes21">Eyes 21</option>
+                    <option value="eyes22">Eyes 22</option>
+                    <option value="eyes23">Eyes 23</option>
+                    <option value="eyes24">Eyes 24</option>
+                    <option value="eyes25">Eyes 25</option>
+                </select>
+
+                <!-- Mouth selection -->
+                <label for="mouthSelector">Mouth:</label>
+                <select id="mouthSelector">
+                    <option value="mouth1">Mouth 1</option>
+                    <option value="mouth2">Mouth 2</option>
+                    <option value="mouth3">Mouth 3</option>
+                    <option value="mouth4">Mouth 4</option>
+                    <option value="mouth5">Mouth 5</option>
+                    <option value="mouth6">Mouth 6</option>
+                    <option value="mouth7">Mouth 7</option>
+                    <option value="mouth8">Mouth 8</option>
+                    <option value="mouth9">Mouth 9</option>
+                    <option value="mouth10">Mouth 10</option>
+                </select>
+
+                <!-- Hat selection -->
+                <label for="hatSelector">Hat:</label>
+                <select id="hatSelector">
+                    <option value="hat1">Hat 1</option>
+                    <option value="hat2">Hat 2</option>
+                    <option value="hat3">Hat 3</option>
+                    <option value="hat4">Hat 4</option>
+                    <option value="hat5">Hat 5</option>
+                    <option value="hat6">Hat 6</option>
+                    <option value="hat7">Hat 7</option>
+                    <option value="hat8">Hat 8</option>
+                    <option value="hat9">Hat 9</option>
+                    <option value="hat10">Hat 10</option>
+                    <option value="hat11">Hat 11</option>
+                    <option value="hat12">Hat 12</option>
+                    <option value="hat13">Hat 13</option>
+                    <option value="hat14">Hat 14</option>
+                    <option value="hat15">Hat 15</option>
+                    <option value="hat16">Hat 16</option>
+                    <option value="hat17">Hat 17</option>
+                    <option value="hat18">Hat 18</option>
+                    <option value="hat19">Hat 19</option>
+                    <option value="hat20">Hat 20</option>
+                    <option value="hat21">Hat 21</option>
+                    <option value="hat22">Hat 22</option>
+                    <option value="hat23">Hat 23</option>
+                    <option value="hat24">Hat 24</option>
+                    <option value="hat25">Hat 25</option>
+                    <option value="hat26">Hat 26</option>
+                    <option value="hat27">Hat 27</option>
+                    <option value="hat28">Hat 28</option>
+                    <option value="hat29">Hat 29</option>
+                    <option value="hat30">Hat 30</option>
+                </select>
+
+                <!-- Clothes selection -->
+                <label for="clothesSelector">Clothes:</label>
+                <select id="clothesSelector">
+                    <!-- Clothes options (40 options) -->
+                    <option value="clothes1">Clothes 1</option>
+                    <option value="clothes2">Clothes 2</option>
+                    <option value="clothes3">Clothes 3</option>
+                    <option value="clothes4">Clothes 4</option>
+                    <option value="clothes5">Clothes 5</option>
+                    <option value="clothes6">Clothes 6</option>
+                    <option value="clothes7">Clothes 7</option>
+                    <option value="clothes8">Clothes 8</option>
+                    <option value="clothes9">Clothes 9</option>
+                    <option value="clothes10">Clothes 10</option>
+                    <option value="clothes11">Clothes 11</option>
+                    <option value="clothes12">Clothes 12</option>
+                    <option value="clothes13">Clothes 13</option>
+                    <option value="clothes14">Clothes 14</option>
+                    <option value="clothes15">Clothes 15</option>
+                    <option value="clothes16">Clothes 16</option>
+                    <option value="clothes17">Clothes 17</option>
+                    <option value="clothes18">Clothes 18</option>
+                    <option value="clothes19">Clothes 19</option>
+                    <option value="clothes20">Clothes 20</option>
+                    <option value="clothes21">Clothes 21</option>
+                    <option value="clothes22">Clothes 22</option>
+                    <option value="clothes23">Clothes 23</option>
+                    <option value="clothes24">Clothes 24</option>
+                    <option value="clothes25">Clothes 25</option>
+                    <option value="clothes26">Clothes 26</option>
+                    <option value="clothes27">Clothes 27</option>
+                    <option value="clothes28">Clothes 28</option>
+                    <option value="clothes29">Clothes 29</option>
+                    <option value="clothes30">Clothes 30</option>
+                    <option value="clothes31">Clothes 31</option>
+                    <option value="clothes32">Clothes 32</option>
+                    <option value="clothes33">Clothes 33</option>
+                    <option value="clothes34">Clothes 34</option>
+                    <option value="clothes35">Clothes 35</option>
+                    <option value="clothes36">Clothes 36</option>
+                    <option value="clothes37">Clothes 37</option>
+                    <option value="clothes38">Clothes 38</option>
+                    <option value="clothes39">Clothes 39</option>
+                    <option value="clothes40">Clothes 40</option>
+                </select>
+
+                <!-- Background color selection -->
+                <label for="backgroundSelector">Background Color:</label>
+                <input type="color" id="backgroundSelector" value="#ffffff">
+
+                <!-- Background aesthetic selection -->
+                <label for="backgroundAestheticSelector">Background Aesthetic:</label>
+                <select id="backgroundAestheticSelector">
+                    <option value="aesthetic1">Aesthetic 1</option>
+                    <option value="aesthetic2">Aesthetic 2</option>
+                    <option value="aesthetic3">Aesthetic 3</option>
+                    <option value="aesthetic4">Aesthetic 4</option>
+                    <option value="aesthetic5">Aesthetic 5</option>
+                    <option value="aesthetic6">Aesthetic 6</option>
+                    <option value="aesthetic7">Aesthetic 7</option>
+                    <option value="aesthetic8">Aesthetic 8</option>
+                    <option value="aesthetic9">Aesthetic 9</option>
+                    <option value="aesthetic10">Aesthetic 10</option>
+                </select>
+
+                <!-- Buttons -->
+                <button id="calvinizeBtn">Calvinize</button>
+                <button id="clearBtn">Clear Selections</button>
+                <button id="downloadBtn">Download Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -28,14 +28,16 @@ calvinizeBtn.addEventListener('click', () => {
     const randomBackgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     const randomAesthetic = `aesthetic${Math.floor(Math.random() * 10) + 1}`;
 
-    // Update selections with random values
+    // Update selectors
     frontSelector.value = randomFront;
     eyeSelector.value = randomEyes;
     mouthSelector.value = randomMouth;
     hatSelector.value = randomHat;
     clothesSelector.value = randomClothes;
     backgroundSelector.value = randomBackgroundColor;
-    backgroundAestheticSelector.value = randomAesthetic;
+    if (backgroundAestheticSelector) {
+        backgroundAestheticSelector.value = randomAesthetic;
+    }
 
     updateCharacter();
 });
@@ -48,7 +50,9 @@ clearBtn.addEventListener('click', () => {
     hatSelector.value = 'hat1';
     clothesSelector.value = 'clothes1';
     backgroundSelector.value = '#ffffff';
-    backgroundAestheticSelector.value = 'aesthetic1';
+    if (backgroundAestheticSelector) {
+        backgroundAestheticSelector.value = 'aesthetic1';
+    }
     updateCharacter();
 });
 
@@ -73,7 +77,9 @@ function updateCharacter() {
     characterBackground.style.backgroundColor = backgroundSelector.value;
 
     // Update aesthetic (for example, using image filters or special background patterns)
-    characterBackground.className = `background ${backgroundAestheticSelector.value}`;
+    if (backgroundAestheticSelector) {
+        characterBackground.className = `background ${backgroundAestheticSelector.value}`;
+    }
 }
 
 // Download the final character as an image

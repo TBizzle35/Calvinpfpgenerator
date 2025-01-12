@@ -40,6 +40,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
 
 /* Controls */
@@ -77,26 +78,21 @@ button:hover {
 }
 
 #character-body {
-    background-image: url('front/front1.png');
-    background-size: cover;
+    background-image: url('/Users/trentbuttrick/Downloads/front/front1.png');
 }
 
 #character-eyes {
-    background-image: url('eyes/eyes1.png');
-    background-size: cover;
+    background-image: url('/Users/trentbuttrick/Downloads/eyes/eyes1.png');
 }
 
 #character-mouth {
-    background-image: url('mouth/mouth1.png');
-    background-size: cover;
+    background-image: url('/Users/trentbuttrick/Downloads/mouth/mouth1.png');
 }
 
 #character-hat {
-    background-image: url('hat/hat1.png');
-    background-size: cover;
+    background-image: url('/Users/trentbuttrick/Downloads/hat/hat1.png');
 }
 
 #character-clothes {
-    background-image: url('clothes/clothes1.png');
-    background-size: cover;
+    background-image: url('/Users/trentbuttrick/Downloads/clothes/clothes1.png');
 }
